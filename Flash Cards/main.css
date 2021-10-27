@@ -1,0 +1,67 @@
+body{
+    background: aquamarine;
+}
+
+h1{
+    position: absolute;
+    top: 15px;
+    left: 40%;
+    text-align: center;
+    font-size: medium;
+    font-family: "Agency FB";
+}
+.flex-container{
+    position: relative;
+    display: flex;
+    height: 60%;
+    width: 30%;
+    flex-wrap: wrap;
+    top: 50px;
+    left: 32%;
+    font-family: Algerian;
+}
+.flex-items{
+    border-radius: 8px;
+    margin: 5px;
+    flex-basis: 6rem;
+    height: 6rem;
+    padding: 10px;
+    color: #ff5800;
+    position: relative;
+    perspective: 1000px;
+}
+
+.flex-items:hover .front{
+    transform: rotateY(180deg);
+}
+
+.flex-items:hover .back{
+    transform: rotateY(360deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.front{
+    background-color: #ffe0bd;
+}
+
+.back{
+    background-color: blueviolet;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
